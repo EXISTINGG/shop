@@ -1,9 +1,5 @@
 {
 	"pages": [{
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}, {
 		"path": "pages/home/home",
 		"style": {
 			"enablePullDownRefresh": false
@@ -38,6 +34,7 @@
 		}
 	},
 	"tabBar": {
+		"selectedColor": "#C00000",
 		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
