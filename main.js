@@ -10,7 +10,8 @@ import {
 uni.$http = $http
 
 // 配置请求根路径
-$http.baseUrl = 'https://www.uinav.com'
+// $http.baseUrl = 'https://www.uinav.com'
+$http.baseUrl = 'https://api-hmugo-web.itheima.net'
 
 // 开启加载效果
 $http.beforeRequest = function(options) {
