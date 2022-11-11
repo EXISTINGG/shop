@@ -1,5 +1,9 @@
 <template>
 	<view>
+		<!-- 使用自定义的搜索组件 -->
+		<view class="search-box">
+			<my-search @clickSearch="gotoSearch"></my-search>
+		</view>
 		<!-- 轮播图区域 -->
 		<swiper autoplay :interval="3000" :duration="1000" :circular="true" indicator-dots
 			indicator-active-color="rgba(192, 0, 0,.7)">
@@ -117,6 +121,12 @@
 						url: '/pages/cate/cate'
 					})
 				}
+			},
+			// 跳转到分包中的搜索页面
+			gotoSearch() {
+				uni.navigateTo({
+					url: '/subpkg/search/search'
+				})
 			}
 		}
 	}
@@ -164,5 +174,11 @@
 				padding-left: 10rpx;
 			}
 		}
+	}
+
+	.search-box {
+		display: sticky;
+		top: 0;
+		z-index: 999;
 	}
 </style>
