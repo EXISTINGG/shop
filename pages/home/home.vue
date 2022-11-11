@@ -110,7 +110,7 @@
 			swiperGoTo(id) {
 				console.log(id);
 				uni.navigateTo({
-					url: `/subpkg/goods_detail/main?goods_id=${id}`
+					url: `/subpkg/goods_detail/goods_detail?goods_id=${id}`
 				})
 			},
 
