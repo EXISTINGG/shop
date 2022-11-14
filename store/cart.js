@@ -82,6 +82,8 @@ export default {
 			let c = 0
 			// 循环统计商品的数量，累加到变量 c 中
 			state.cart.forEach(goods => c += goods.goods_count)
+			// 如果没有商品,返回 false, 让全选按钮取消
+			// if (c === 0) return false
 			return c
 		},
 		// 勾选的商品的总数量

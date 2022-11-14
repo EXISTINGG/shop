@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<my-address></my-address>
 		<view class="cart-container" v-if="cart.length !== 0">
 			<!-- 购物车商品列表的标题区域 -->
 			<view class="cart-title">
@@ -18,8 +19,6 @@
 					</uni-swipe-action-item>
 				</block>
 			</uni-swipe-action>
-			<!-- 结算区域 -->
-			<my-settle></my-settle>
 		</view>
 
 		<!-- 空白购物车区域 -->
@@ -27,6 +26,8 @@
 			<image src="/static/cart_empty@2x.png" class="empty-img"></image>
 			<text class="tip-text">空空如也~</text>
 		</view>
+		<!-- 结算区域 -->
+		<my-settle></my-settle>
 	</view>
 </template>
 
